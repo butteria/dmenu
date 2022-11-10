@@ -1,24 +1,26 @@
-dmenu - dynamic menu
-====================
-dmenu is an efficient dynamic menu for X.
+# Patches
+see: https://tools.suckless.org/dmenu/patches/
 
+# Feature
+== Mouse support ==
+Left-mouse click:
+    On prompt and input field: clear input text and selection.
+    In horizontal and vertical mode on item: select and output item (same as pressing enter).
+    In horizontal mode on arrows: change items to show left or right.
+Ctrl-left-mouse click:
+    multisel modifier.
+Right-mouse click:
+    close.
+Middle-mouse click:
+    Paste current selection.
+While holding shift:
+    paste primary selection.
+Scroll up:
+    In horizontal mode: same as left-clicking on left arrow.
+    In vertical mode: show items above.
+Scroll down:
+    In horizontal mode: same as left-clicking on right arrow.
+    In vertical mode: show items below.
 
-Requirements
-------------
-In order to build dmenu you need the Xlib header files.
-
-
-Installation
-------------
-Edit config.mk to match your local setup (dmenu is installed into
-the /usr/local namespace by default).
-
-Afterwards enter the following command to build and install dmenu
-(if necessary as root):
-
-    make clean install
-
-
-Running dmenu
--------------
-See the man page for details.
+== Print Index ==
+Pass the -ix flag to dmenu to enable index printing.
