@@ -27,3 +27,6 @@ Pass the -ix flag to dmenu to enable index printing.
 
 == numbers ==
 Adds text which displays the number of matched and total items in the top right corner of dmenu.
+
+== highlight ==
+highlight the individual characters of matched text for each dmenu list entry.
